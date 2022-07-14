@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>So i Source</title>
+    <style>
+        body {
+            width: 90%;
+            margin: auto;
+        }
+        body > div {
+            margin-bottom: 50px;
+            padding: 20px;
+            border: solid 1px #000;
+        }
+        h2 {
+            text-decoration-line: underline;
+        }
+        .flex {
+            display: flex;
+            justify-content: space-around;
+        }
+        .flex > div {
+            width: 48%;
+        }
+        nav {
+            max-width: 400px;
+        }
+        nav > ul {
+            padding: 0;
+            list-style: none;
+        }
+        nav > ul > li {
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        nav > ul > li > a {
+            color: darkcyan;
+        }
+        @media screen and (max-width:767px) {
+            .flex {
+                display: block;
+            }
+            .flex > div {
+                width: 100%;
+            }
+            nav {
+                width: 90%;
+            }
+            nav > ul {
+                display: flex !important;
+                justify-content: space-between;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            h2 {
+                font-size: 16px;
+            }
+            p {
+                font-size: 14px;
+            }
+            nav > ul > li > a {
+                font-size: 14px;
+            }
+            body > div {
+                margin-bottom: 30px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>So i Source カリキュラム</h1>
+    <nav>
+        <ul class="flex">
+            <li><a href="#sec1">Front-end</a></li>
+            <li><a href="#sec2">Vue.js</a></li>
+            <li><a href="#sec3">Web Design</a></li>
+            <li><a href="#sec4">PHP</a></li>
+        </ul>
+    </nav>
+    <div class="flex">
+        <div id="sec1">
+            <h2>Front-end 【無料】</h2>
+            <ol>
+                <li>HTML、CSS
+                    <ol>
+                        <li>始める前の準備</li>
+                        <li>div-puzzle-pc</li>
+                        <li>div-puzzle-sp</li>
+                        <li>pc-site</li>
+                        <li>responsive-site</li>
+                    </ol>
+                </li>
+                <li>JavaScript
+                    <ol>
+                        <li> JavaScriptカリキュラム概要</li>
+                        <li>カリキュラムページ一覧</li>
+                    </ol>
+                </li>
+                <li>wepack,ejs,Sass
+                    <ol>
+                        <li>wepack、ejs、SASSについて</li>
+                        <li>始める前の準備①（Node.js）</li>
+                        <li>始める前の準備②（環境構築）</li>
+                        <li>始める前の準備③（SCSS）</li>
+                        <li>kadai_PC</li>
+                        <li>kadai_SP</li>
+                    </ol>
+                </li>
+                <li>jQuery
+                    <ol>
+                        <li> jQueryとは</li>
+                        <li> jQueryカリキュラム概要</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+        <div>
+            <h2>Front-end 【有料】</h2>
+            <ol>
+                <li>上記カリキュラム</li>
+                <li>現役エンジニアによる添削</li>
+                <li>ポートフォリオ作成</li>
+            </ol>
+        </div>
+    </div>
+    <div id="sec2">
+        <h2>Vue.js 【有料】</h2>
+        <ol>
+            <li>Vue.jsとは
+                <ol>
+                    <li>Webフロントエンドの変遷</li>
+                    <li>Vue.jsの特徴</li>
+                </ol>
+            </li>
+            <li>Vue.jsの基本
+                <ol>
+                    <li>インストールとHello World!</li>
+                    <li>Vueインスタンスの作成</li>
+                    <li>dataとテンプレート構文</li>
+                    <li>メソッドとイベントハンドリング</li>
+                    <li>算出プロパティとウォッチャ</li>
+                    <li>フィルタ</li>
+                    <li>フォーム入力バインディング</li>
+                    <li>条件付きレンダリング</li>
+                    <li>リストレンダリング</li>
+                    <li>クラスとスタイルのバインディング</li>
+                    <li>ライフサイクルフック</li>
+                </ol>
+            </li>
+            <li>コンポーネントの基本
+                <ol>
+                    <li>コンポーネントの作成</li>
+                    <li>親から子コンポーネントへのデータ受け渡し</li>
+                    <li>子から親コンポーネントへのイベント放出</li>
+                    <li>スロット</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+    <div id="sec3">
+        <h2>Web Design 【有料】</h2>
+        <ol>
+            <li>デザインとは
+                <ol>
+                    <li>UIとUXの密接なかかわり</li>
+                    <li>デザインとは何か</li>
+                    <li>デザインの必要性</li>
+                    <li>Webデザイン・グラフィックデザインの違い</li>
+                </ol>
+            </li>
+            <li>インターフェースデザインについて
+                <ol>
+                    <li>デバイスにより異なる最適なUI</li>
+                    <li>インターフェースデザインとインタラクションデザイン</li>
+                </ol>
+            </li>
+            <li>人間の認知特性とデザイン
+                <ol>
+                    <li>色を瞬時に見分ける力</li>
+                    <li>形を瞬時に見分ける力</li>
+                    <li>動きや変化を見つける力</li>
+                </ol>
+            </li>
+            <li>配色に関して
+                <ol>
+                    <li>色のもつイメージ</li>
+                    <li>基本的な配色パターン</li>
+                    <li>ターゲットに合わせた配色をする</li>
+                </ol>
+            </li>
+            <li>タイポグラフィ・フォントに関して
+                <ol>
+                    <li>タイポグラフィとは</li>
+                    <li>基本的なフォント</li>
+                    <li>フォントの選び方</li>
+                    <li>文字組みの基本的なテクニック</li>
+                    <li>文字のレイアウト</li>
+                </ol>
+            </li>
+            <li>デザインの基本原則
+                <ol>
+                    <li> 整列</li>
+                    <li>区分</li>
+                    <li>近接</li>
+                    <li>反復</li>
+                    <li>コントラスト</li>
+                    <li>偏重</li>
+                </ol>
+            </li>
+            <li>Illustratorの使い方
+                <ol>
+                    <li>Illustratorの特徴</li>
+                    <li>ベクター画像とビットマップ画像</li>
+                    <li>Illustratorの基本操作</li>
+                </ol>
+            </li>
+            <li>Photoshopの使い方
+                <ol>
+                    <li>Photoshopの特徴</li>
+                    <li>Photoshopの基本操作</li>
+                </ol>
+            </li>
+            <li>Adobe XDの使い方
+                <ol>
+                    <li>XDの特徴</li>
+                    <li>XDの基本操作</li>
+                </ol>
+            </li>
+            <li>Figmaの使い方
+                <ol>
+                    <li>Figmaの特徴</li>
+                    <li>ダウンロード〜簡単な要素作成</li>
+                    <li>コンポーネント</li>
+                    <li>プロトタイプ制作</li>
+                    <li>デザインの共有</li>
+                </ol>
+            </li>
+            <li>デザイン実務に入る前に
+                <ol>
+                    <li>Webサイト制作の主なフロー</li>
+                    <li>ヒアリングでクライアントを知る</li>
+                    <li>コンセプトはデザインの道しるべ</li>
+                    <li>競合との向き合い方</li>
+                </ol>
+            </li>
+            <li>ロゴ制作実践
+                <ol>
+                    <li>ロゴの基本知識</li>
+                    <li>ロゴ制作のポイント</li>
+                    <li>トレース課題</li>
+                    <li>実践課題</li>
+                </ol>
+            </li>
+            <li>バナー制作実践
+                <ol>
+                    <li>バナーの基本知識</li>
+                    <li>バナー制作のポイント</li>
+                    <li>トレース課題</li>
+                    <li>実践課題</li>
+                </ol>
+            </li>
+            <li>メインビジュアル制作実践
+                <ol>
+                    <li>メインビジュアルの基本知識</li>
+                    <li>メインビジュアル制作のポイント</li>
+                    <li>トレース課題</li>
+                    <li>実践課題</li>
+                </ol>
+            </li>
+            <li>ワイヤーフレーム制作実践
+                <ol>
+                    <li>ワイヤーフレームの基本知識</li>
+                    <li>ワイヤーフレーム制作のポイント</li>
+                    <li>トレース課題</li>
+                    <li>実践課題</li>
+                </ol>
+            </li>
+            <li>デザインカンプ制作実践
+                <ol>
+                    <li>デザインカンプ制作のポイント</li>
+                    <li>アニメーションデザイン</li>
+                    <li>トレース課題</li>
+                    <li>実践課題</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+    <div id="sec4" class="flex">
+        <div>
+            <h2>PHP 【無料】</h2>
+            <ol>
+                <li>前編
+                    <ol>
+                        <li>PHPの基礎</li>
+                        <li>変数の使い方</li>
+                        <li>条件分岐</li>
+                        <li>配列、連想配列、多次元配列の操作</li>
+                        <li>繰り返し処理</li>
+                        <li>関数を使ってみよう</li>
+                        <li>GETとPOST</li>
+                        <li>データベース</li>
+                        <li>オブジェクト指向の基礎を学ぼう</li>
+                    </ol>
+                </li>
+                <li>後編
+                    <ol>
+                        <li>Laravelとは</li>
+                        <li>Laravel学習</li>
+                        <li>Laravel課題1</li>
+                        <li>Laravel課題2</li>
+                        <li>課題アプリの仕様</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+        <div>
+            <h2>PHP 【有料】</h2>
+            <ol>
+                <li>上記カリキュラム</li>
+                <li>現役エンジニアによる添削</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
